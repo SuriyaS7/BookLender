@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../style/admindashboard.css">
+</head>
+<body>
+  <div class="container">
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+  <div class="card">
+    <h1>Admin Dashboard</h1>
+    <form id="addBookForm" class="form">
+      <h3>Add a Book</h3>
+      <input type="text" id="bookTitle" placeholder="Book Title" required>
+      <input type="text" id="authorName" placeholder="Author Name" required>
+      <button type="submit">Add Book</button>
+    </form>
+    
+    <h3>Book List</h3>
+    <table id="bookTable">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic book rows will be added here -->
+      </tbody>
+    </table>
+  </div>
+  <script src="../script/admindashboard.js"></script>
+</body>
+</html>

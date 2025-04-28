@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8e8e8; /* Light rose background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .card {
+    background: #fff;
+    border: 2px solid #db4c4c; /* Deep red border */
+    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    top: 10%;
+  }
+  
+  .form input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+  }
+  
+  .form button {
+    background-color: #e66a6a;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #db4c4c;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  button.action-btn {
+    background-color: #e66a6a;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.action-btn:hover {
+    background-color: #db4c4c;
+  }
+  
+  .logout-btn {
+    background-color: #e66a6a; /* Rose color */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute; /* Absolute positioning for placing at the top-right */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a raised look */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .logout-btn:hover {
+    background-color: #db4c4c; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  

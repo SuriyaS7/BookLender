@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="../style/userdashboard.css">
+</head>
+<body>
+  <div class="container">
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+  <div class="card">
+    <h1>User Dashboard</h1>
+    <div class="tabs">
+      <button id="viewBooksTab">View Books</button>
+      <button id="lendedBooksTab">Lended Books</button>
+    </div>
+
+    <div id="viewBooksSection" class="section">
+      <h3>Available Books</h3>
+      <table id="availableBooksTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic book rows will be added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="lendedBooksSection" class="section hidden">
+      <h3>Lended Books</h3>
+      <table id="lendedBooksTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic lended book rows will be added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div id="lendBookPopup" class="popup hidden">
+      <form id="lendBookForm" class="form">
+        <h3>Lend Book</h3>
+        <input type="text" id="lendBookTitle" placeholder="Book Title" readonly required>
+        <input type="date" id="lendFromDate" placeholder="From Date" required>
+        <input type="date" id="lendToDate" placeholder="To Date" required>
+        <button type="submit">Confirm Lend</button>
+        <button type="button" id="closePopup">Cancel</button>
+      </form>
+    </div>
+  </div>
+  <script src="../script/userdashboard.js"></script>
+</body>
+</html>
